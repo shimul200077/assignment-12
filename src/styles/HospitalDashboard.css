@@ -1,0 +1,78 @@
+.hospital-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.hospital-dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.hospital-dashboard-container p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #7f8c8d;
+}
+
+.bookings-table-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Allows table to scroll horizontally on small screens */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f9fa;
+  color: #34495e;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+table td {
+  color: #555;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.status.confirmed {
+  background-color: #28a745; /* Green */
+}
+
+.status.pending {
+  background-color: #ffc107; /* Yellow/Orange */
+}
+
+.status.cancelled {
+  background-color: #dc3545; /* Red */
+} 
